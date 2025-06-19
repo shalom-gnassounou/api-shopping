@@ -7,7 +7,9 @@ fetch('https://dummyjson.com/products')
 })
 .then(function(data){
     const products= data.products
+    console.log(products)
     showproducts(products)
+    
 })
 
 function showproducts(products){
